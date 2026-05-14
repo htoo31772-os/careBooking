@@ -1,0 +1,281 @@
+/* မင်းနောက်မှ ဒီ Style တွေကို style.css ထဲ ကူးထည့်လိုက် */
+:root {
+    --main-blue: #2563eb;
+    --light-bg: #f0f4ff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcfdfe;
+}
+
+/* Hero Section with Doctor Image */
+#hero-section {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    color: white;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.hero-img {
+    max-width: 110%;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+/* Quick Booking Form on Home Page */
+#quick-booking-form {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    margin-top: -60px;
+    /* Hero အောက်ထဲ နည်းနည်း ကျွံဝင်နေအောင် */
+    position: relative;
+    z-index: 10;
+}
+
+/* Disease Category Cards */
+.category-item {
+    border: none;
+    border-radius: 15px;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    height: 100%;
+}
+
+.category-item:hover {
+    background: var(--main-blue);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--main-blue);
+}
+
+.category-item:hover .category-icon {
+    color: white;
+}
+
+/* General Custom Classes */
+.btn-rounded {
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+/* Card  */
+/* CSS အပိုင်း - Home Page Card အတွက် */
+.doctor-card {
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background: white;
+    overflow: hidden;
+}
+
+.doctor-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-img-container {
+    position: relative;
+}
+
+.badge-specialty {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2563eb;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+}
+
+.interaction-bar {
+    border-top: 1px solid #f1f5f9;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.stat-item {
+    color: #64748b;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.stat-item:hover {
+    color: #2563eb;
+}
+
+.stat-item i {
+    font-size: 1.1rem;
+    margin-right: 4px;
+}
+
+.like-active {
+    color: #ef4444 !important;
+}
+
+/* Profile Start */
+#profile-sidebar {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+#profile-image-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+}
+
+#profile-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.edit-photo-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--main-blue);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.info-card {
+    background: white;
+    border-radius: 20px;
+    border: none;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.9rem;
+}
+
+.form-control-custom {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #f1f5f9;
+    border: 1px solid transparent;
+}
+
+.form-control-custom:focus {
+    background-color: white;
+    border-color: var(--main-blue);
+    box-shadow: none;
+}
+
+.datepicker-container .react-datepicker-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.datepicker-container .react-datepicker__input-container {
+    display: block;
+    width: 100%;
+}
+
+
+.datepicker-container .react-datepicker__input-container input {
+    width: 100% !important;
+}
+
+/* Profile End */
+/* Doctor Detail Start */
+
+
+#doctor-profile-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#booking-widget {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 100px;
+    /* Navbar ရှိရင် Navbar အောက်မှာ ကပ်နေအောင် */
+}
+
+.slot-btn {
+    border: 1px solid #dee2e6;
+    background: white;
+    transition: 0.2s;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.slot-btn:hover {
+    border-color: var(--main-blue);
+    color: var(--main-blue);
+}
+
+.slot-btn.active {
+    background-color: var(--main-blue);
+    color: white;
+    border-color: var(--main-blue);
+}
+
+.review-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+#calendar-input {
+    border: 1px solid #eee;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* Doctor Detail End */
+/* Booking Start */
+.booking-card {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Booking End */

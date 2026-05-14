@@ -1,0 +1,45 @@
+:root {
+    --sidebar-width: 260px;
+    --primary-blue: #2563eb;
+}
+
+body {
+    background-color: #f4f7fe;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    background: #1e293b;
+    color: white;
+    transition: all 0.3s;
+}
+
+#sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 12px 20px;
+    margin: 5px 15px;
+    border-radius: 10px;
+}
+
+#sidebar .nav-link:hover,
+#sidebar .nav-link.active {
+    background: var(--primary-blue);
+    color: white;
+}
+
+/* Main Content Styling */
+#main-content {
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+}
+
+.stat-card {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
