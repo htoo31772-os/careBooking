@@ -10,3 +10,7 @@ Route::get('/', function () {
 Route::get('/{any}', function () {
     return view('careBooking');
 })->where('any', '.*');
+
+Route::get('/debug-db', function () {
+    return config('database.connections.mysql');
+});
